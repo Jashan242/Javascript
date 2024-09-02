@@ -14,3 +14,5 @@ password=1212345
 // Var is not used or preferred bcoz of issue in block or functional scope 
 
 console.table([accountId,name,email,password,state])
+
+//js has prottype behaviour
