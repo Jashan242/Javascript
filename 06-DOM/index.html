@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(name){
+        const li=document.createElement('li')
+        li.innerHTML=`${name}`
+        document.querySelector('.language').append(li)
+    }
+    addLanguage('JAVA')
+
+    function addLang(name){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(name))
+    }
+
+    //Edit
+    const sec=document.querySelector("li:nth-child(2)")
+    const newLi=document.createElement('li')
+    newli.textContent="C++"
+    sec.replaceWith(newLi)
+</script>
+</html>

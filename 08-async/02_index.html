@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learn javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const ele=function(){
+        console.log("Hello", new Date().getTime())
+    }
+    let interval;
+
+    const st=document.getElementById('start')
+    const stop=document.getElementById('stop')
+    const stFun=function(){
+        interval=setInterval(ele,1000)
+    }
+    const stopFunc=function(){
+        clearInterval(interval)
+    }
+    st.addEventListener('click', stFun)
+    stop.addEventListener('click',stopFunc)
+</script>
+</html>
